@@ -76,11 +76,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .name {
     font-size: 17px;
     text-align: center;
+    color: black;
+}
+
+.name:hover {
+    color: rgb(223, 232, 104);
+    cursor: pointer;
 }
 
 .price {
@@ -280,4 +287,52 @@ ul {
 .product-name {
     text-align: center;
     font-size: 13px;
+}
+
+.qty {
+    padding: 3px;
+    outline: none;
+    width: 50px;
+}
+
+.btnCheckout, .addToCart {
+    text-decoration: none;
+    color: white;
+    background-color: #F23F2F;
+    padding: 10px;
+    float: right;
+    border-radius: 2px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btnCheckout:hover {
+    background-color: rgb(223, 232, 104);
+}
+
+.product-detail-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-detail {
+    margin-left: 5rem;
+}
+
+.addToCart {
+    border: none;
+    float: left;
+}
+
+.addToCart:hover {
+    background-color: rgb(223, 232, 104);
+}
+
+.description {
+    width: 50%;
+    margin: 2rem auto;
+    text-align: justify;
+    line-height: 1.5;
 }
